@@ -1,0 +1,23 @@
+<div class="sidenav">
+    <h2>
+        Code Climber Group
+    </h2>
+</div>
+
+<div>
+    <div class="toggle-button-row" (click)="toggleSlideOut()">
+        <mat-icon>menu</mat-icon>
+    </div>
+</div>
+
+<!-- Again, using an boolean to determine if the slide-out panel should be shown
+If isSlideOut = true, then slide-out will be added to the class, so the panel will disappear-->
+<div class="slide-out-panel" [class.slide-out]="isSlideOut">
+    <div class="slide-out-content">
+        <h3 class="nav">Budget Planner</h3>
+        <p class="edit-col" (click)="onDash()">Dashboard</p>
+        <p class="edit-col" (click)="onProfile()">Profile</p>
+        <p class="edit-col" (click)="onHistory()">Prev History</p>
+        <p class="edit-col" (click)="onLogout()">Log Out</p>
+    </div>
+</div>
