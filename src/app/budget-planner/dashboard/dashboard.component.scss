@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 1s ease;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        border: 0 solid #F3EAFF;
+        box-shadow: transparent;
+        transition: border 1s ease 0.05s,
+            box-shadow 1s ease 0.08s;
+    }
+
+    &:hover,
+    &:focus {
+        background: transparent;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2),
+            inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+        transform: translateY(-7px);
+
+        .income-icon,
+        .expense-icon, .todo-icon, .total-icon {
+            background-color: grey;
+        }
+    }
+
+    &:hover:before,
+    &:focus:before {
+        border: 1px solid #F3EAFF;
+        box-shadow: 0 0 7px 0 rgba(19, 184, 254, 0.75),
+            0 0 5px 2px #13a0fe,
+            inset 0 0 7px 0 rgba(19, 203, 254, 0.75),
+            inset 0 0 5px 2px #13b4fe;
+    }
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+
+.mat-icon {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(135deg, #87e9ff, #0dd2e8);
+    border-radius: 10px;
+    font-size: 16px;
+
+    &:hover {
+        background: linear-gradient(135deg, #0dd2e8, #078aba);
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.transaction-status {
+    display: inline-block; // Make sure the icon and text are inline
+    vertical-align: middle;
+    font-size: 20px;
+
+    mat-icon {
+        color: #4caf50 !important;
+    }
+}
+
+.transaction-detail {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.transaction-detail.completed {
+    text-decoration: line-through;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.income-icon {
+    background-color: #008080;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.expense-icon {
+    background-color: #f06363;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.todo-icon {
+    background-color: #63e9f0;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.total-icon {
+    background-color: #0daf25;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.total-item {
+    display: inline-flex;
+}
+
+.total-item p {
+    padding-left: 12px;
+}
