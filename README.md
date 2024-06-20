@@ -1,27 +1,32 @@
-# BudgetPlanner
+# Budget-Planner
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+This Budget Planner app is my first project created using the Angular framework. It is generated with [Angular CLI](https://cli.angular.io/) and primarily uses TypeScript, HTML, and SCSS. Through this project, I have learned how to create page routing, forms, and how to interact between the HTML interface and TypeScript logic.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Page Routing**: Easily navigate between different pages of the application.
+- **Forms**: Collect and validate user input efficiently.
+- **Data Interaction**: Smooth interaction between the HTML interface and TypeScript logic.
+- **Side Navigation**: A side navigation panel that can slide in and out, allowing users to easily route to other pages.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pages
 
-## Build
+1. **Login**: User authentication page.
+2. **Dashboard**: Overview of the user's budget and expenses.
+3. **Income**: Page to track and manage income sources.
+4. **Expense**: Page to track and manage expenses.
+5. **To-Do Transactions**: Manage upcoming transactions.
+6. **Profile**: User profile management.
+7. **Transaction History**: View and manage past transactions.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
 
-## Running unit tests
+- **Angular**: Framework for building the web application.
+- **TypeScript**: Primary language used for development.
+- **HTML**: Markup language for creating the application's structure.
+- **SCSS**: CSS preprocessor used for styling the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Node.js and npm installed on your machine. You can download them from [here](https://nodejs.org/).
