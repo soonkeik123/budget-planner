@@ -30,3 +30,8 @@ This Budget Planner app is my first project created using the Angular framework.
 ### Prerequisites
 
 - Node.js and npm installed on your machine. You can download them from [here](https://nodejs.org/).
+
+### To Start Project
+
+- npm install (NPM will install all required packages and dependencies for the project)
+- ng serve (Build the project with Angular)
